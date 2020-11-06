@@ -6,7 +6,8 @@ public class Perro
 	private int edad;
 	private String color;
 	
-	public Perro() {
+	public Perro() 
+	{
 		raza = "";
 		tamano = "";
 		edad = 0;
