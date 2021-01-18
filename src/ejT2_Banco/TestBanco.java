@@ -11,20 +11,15 @@ public class TestBanco {
 		Cuenta cuentaBeatriz = new Cuenta(62342, 100, beatriz);
 
 		/* Antonio y Beatriz consultan el saldo */
-		System.out.println("La cuenta de " + cuentaAntonio.getTitular().getNombre() + " tiene "
-				+ cuentaAntonio.getSaldo() + " euros.");
-		System.out.println("La cuenta de " + cuentaBeatriz.getTitular().getNombre() + " tiene "
-				+ cuentaBeatriz.getSaldo() + " euros.");
+		consultaSaldo(cuentaAntonio);
+		consultaSaldo(cuentaBeatriz);
 
 		/* Beatriz transfiere 50€ a Antonio */
 		cuentaBeatriz.setSaldo(cuentaBeatriz.getSaldo() - 50);
 		cuentaAntonio.setSaldo(cuentaAntonio.getSaldo() + 50);
 
-		/* Antonio y Beatriz vuelven a consultar para comprobar que todo ha ido bien */
-		System.out.println("La cuenta de " + cuentaAntonio.getTitular().getNombre() + " tiene "
-				+ cuentaAntonio.getSaldo() + " euros.");
-		System.out.println("La cuenta de " + cuentaBeatriz.getTitular().getNombre() + " tiene "
-				+ cuentaBeatriz.getSaldo() + " euros.");
+		consultaSaldo(cuentaAntonio);
+		consultaSaldo(cuentaBeatriz);
 
 		/* Antonio gana 100€ en una rifa y hace un ingreso en su cuenta */
 		cuentaAntonio.setSaldo(cuentaAntonio.getSaldo() + 100);
@@ -36,9 +31,12 @@ public class TestBanco {
 		cuentaAntonio.setSaldo(cuentaAntonio.getSaldo() - 50);
 		cuentaBeatriz.setSaldo(cuentaBeatriz.getSaldo() + 50);
 		
+		consultaSaldo(cuentaAntonio);
+		consultaSaldo(cuentaBeatriz);
+	}//main
+
+	private static void consultaSaldo(Cuenta cuentaAntonio) {
 		System.out.println("La cuenta de " + cuentaAntonio.getTitular().getNombre() + " tiene "
 				+ cuentaAntonio.getSaldo() + " euros.");
-		System.out.println("La cuenta de " + cuentaBeatriz.getTitular().getNombre() + " tiene "
-				+ cuentaBeatriz.getSaldo() + " euros.");
-	}//main
+	}
 }//cierre
