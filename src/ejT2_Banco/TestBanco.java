@@ -40,5 +40,5 @@ public class TestBanco {
 				+ cuentaAntonio.getSaldo() + " euros.");
 		System.out.println("La cuenta de " + cuentaBeatriz.getTitular().getNombre() + " tiene "
 				+ cuentaBeatriz.getSaldo() + " euros.");
-	}
-}
+	}//main
+}//cierre
