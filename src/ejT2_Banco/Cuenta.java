@@ -5,16 +5,16 @@ public class Cuenta {
 	//atributos
 	private int nCuenta;
 	private int Saldo;
-	private Cliente Titular;
+	private Cliente_ Titular;
 	
 	//Constructores vacios
 	public Cuenta() {
 		nCuenta = 0;
 		Saldo = 100;
-		Titular = new Cliente();
+		Titular = new Cliente_();
 		
 	}
-	public Cuenta(int n, int s, Cliente t) {
+	public Cuenta(int n, int s, Cliente_ t) {
 		nCuenta = n;
 		Saldo = s;
 		Titular = t;
@@ -32,10 +32,10 @@ public class Cuenta {
 	public void setSaldo(int saldo) {
 		Saldo = saldo;
 	}
-	public Cliente getTitular() {
+	public Cliente_ getTitular() {
 		return Titular;
 	}
-	public void setTitular(Cliente titular) {
+	public void setTitular(Cliente_ titular) {
 		this.Titular = titular;
 	}
 	

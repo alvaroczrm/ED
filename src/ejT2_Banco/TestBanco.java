@@ -3,8 +3,8 @@ package ejT2_Banco;
 public class TestBanco {
 	public static void main(String[] args) {
 		/* Antonio y Beatriz se hacen cliente del banco */
-		Cliente antonio = new Cliente("123456789Z", "Antonio Alonso", "Av. Pueblo Saharaui, s/n");
-		Cliente beatriz = new Cliente("987654321A", "Beatriz Benítez", "Calle Sol, 4");
+		Cliente_ antonio = new Cliente_("123456789Z", "Antonio Alonso", "Av. Pueblo Saharaui, s/n");
+		Cliente_ beatriz = new Cliente_("987654321A", "Beatriz Benítez", "Calle Sol, 4");
 
 		/* Por defecto, todas las cuentas nuevas tienen 100€ */
 		Cuenta cuentaAntonio = new Cuenta(48151, 100, antonio);

@@ -1,6 +1,10 @@
 package ejT2_Banco;
-
-public class Cliente {
+/**
+ * 
+ * @author acr71
+ *
+ */
+public class Cliente_ {
 
 	//Atributos
 	private String dni;
@@ -8,12 +12,12 @@ public class Cliente {
 	private String direccion;
 	
 	//Declaracion del constructor para los contructores vacios
-	public Cliente() {
+	public Cliente_() {
 		dni = "";
 		Nombre = "";
 		direccion = "";
 	}
-	public Cliente(String d, String n, String di) {
+	public Cliente_(String d, String n, String di) {
 		dni = d;
 		Nombre = n;
 		direccion = di;
