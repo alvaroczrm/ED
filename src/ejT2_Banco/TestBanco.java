@@ -34,7 +34,7 @@ public class TestBanco {
 		consultaSaldo(cuentaAntonio);
 		consultaSaldo(cuentaBeatriz);
 	}//main
-
+//metodo refactorizado para las consultas
 	private static void consultaSaldo(Cuenta cuentaAntonio) {
 		System.out.println("La cuenta de " + cuentaAntonio.getTitular().getNombre() + " tiene "
 				+ cuentaAntonio.getSaldo() + " euros.");
